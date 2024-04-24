@@ -2,13 +2,18 @@
 
 const express = require("express");
 const router = express.Router();
+const authcontrollers = require("../controllers/auth-controller");
 
-router.get("/", (req, res) => {
-  res.status(200).send("First MERN stack app");
-});
+// router.get("/", (req, res) => {
+//   res.status(200).send("First MERN stack app");
+// });
 
-router.route("/register").get((req, res) => {
-  res.status(200).send("Registration page");
-});
+router.route("/").get(authcontrollers.home);
+
+router.route("/register").get(authcontrollers.register);
+
+// router.route("/register").get((req, res) => {
+//   res.status(200).send("Registration page");
+// });
 
 module.exports = router;

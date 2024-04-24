@@ -18,3 +18,9 @@ automatically restarts the node application when file changes in the directory a
 
 Now we will use nodemon server.js command to run the server
 
+Inside server, create a folder router and inside that create a file auth-router.js
+
+Inside server, create a folder controllers and inside it create a file auth-controller.js
+
+"action" is the description of what you want to do, while "dispatch" is the function that carries out that action.
+
