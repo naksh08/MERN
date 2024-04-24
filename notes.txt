@@ -1,0 +1,20 @@
+first we have created a folder MERN
+inside that folder we have created a folder server
+inside the server folder, run npm init -y to generate package.json 
+after that, run npm i express
+
+now create a file server.js
+
+The first line const express = require("express"); is using Node.js's require function to import the Express.js module. Express.js is a web application framework for Node.js. The require function is used to import modules in Node.js. The imported module is then assigned to the express constant.
+
+The second line const app = express(); is calling the imported express function to create a new Express application. This app object has methods for routing HTTP requests, configuring middleware, rendering HTML views and registering a template engine.
+
+app.get() is used to set the routes...like what response the server will send if the particular url is being requested.
+
+then we are setting the PORT number to 5000 and defining app.listen() function to listen the requests comming from port 5000.
+
+Now, npm i nodemon which 
+automatically restarts the node application when file changes in the directory are detected.
+
+Now we will use nodemon server.js command to run the server
+
