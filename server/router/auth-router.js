@@ -10,7 +10,7 @@ const authcontrollers = require("../controllers/auth-controller");
 
 router.route("/").get(authcontrollers.home);
 
-router.route("/register").get(authcontrollers.register);
+router.route("/register").post(authcontrollers.register);
 
 // router.route("/register").get((req, res) => {
 //   res.status(200).send("Registration page");
