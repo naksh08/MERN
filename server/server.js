@@ -1,13 +1,11 @@
 const express = require("express");
 const app = express();
+const router = require("./router/auth-router");
 
-app.get("/", (req, res) => {
-  res.status(200).send("First MERN stack app");
-});
+// Mounting the router on the /api/auth path
+ app.use("/api/auth", router);
 
-app.get("/register",(req,res)=>{
-    res.status(200).send("Registration page");
-});
+
 
 const PORT = 5000;
 app.listen(PORT, () => {
